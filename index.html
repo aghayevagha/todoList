@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/todo.css">
+    <link rel="stylesheet" href="/css/todo-mobile.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.15.0/Sortable.min.js"
+        integrity="sha512-Eezs+g9Lq4TCCq0wae01s9PuNWzHYoCMkE97e2qdkYthpI0pzC3UGB03lgEHn2XM85hDOUF6qgqqszs+iXU4UA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+</head>
+
+<body>
+    <main>
+        <div class="main-container">
+            <div class="container">
+                <div class="yellow-header">
+                </div>
+                <div class="content">
+                    <div class="header">
+                        <h1 class="title">To-Do List</h1>
+                    </div>
+                    <div class="sort-container">
+                        <div class="sort" id="#sort">
+                            <img class="sort-first" src="images/gray-sort-icon.svg" alt="">
+
+                            <img class="sort-second" src="/images/grey-reverse-sort-icon.svg" alt="">
+                        </div>
+                        <ul class="todo-list wrapper" id="list">
+
+                        </ul>
+                        <div class="input-content">
+                            <input class="todo-input" id="myInput" type="text" name="todo-list" required autofocus
+                                placeholder="Qeydi daxil edin...">
+                            <buton class="x-btn" onclick="document.getElementById('myInput').value = '' ">
+                            </buton>
+                        </div>
+                    </div>
+                    <div class="footer">
+                        <button class="add-btn">
+                            <div class="plus-btn">+</div> <span>Əlavə et</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="/js/todo.js"></script>
+
+</body>
+
+</html>

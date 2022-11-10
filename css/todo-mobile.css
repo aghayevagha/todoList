@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,400&display=swap');
+
+/* ---------------------MOBILE------------------- */
+
+@media screen and (min-width:320px) and (max-width:800px) {
+    * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        box-sizing: border-box;
+        border-collapse: collapse;
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 3.2vw;
+        line-height: 1.4vw;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .container {
+        width: 80vw;
+        min-height: 50vw;
+        border: 0.1em solid #C4C4C4;
+        border-radius: 2vw;
+    }
+
+    .yellow-header {
+        width: 100%;
+        height: 5.5vw;
+        border-radius: 1.8vw 1.8vw 0 0;
+        background-color: #FFDC40;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 3vw 0;
+    }
+
+    .header {
+        margin-top: 4vw;
+        margin-bottom: 3.5vw;
+    }
+
+    .header h1 {
+        font-weight: 900;
+        font-size: 6.25vw;
+        line-height: 5.6vw;
+    }
+
+    .sort-container .sort {
+        display: flex;
+        justify-content: flex-end;
+        padding: 0 2.8vw 2.5vw 0
+    }
+
+    .sort img {
+        width: 5.5vw;
+    }
+
+    .sort img:hover {
+        cursor: pointer;
+    }
+
+
+    .sort-second {
+        display: none;
+    }
+
+    .todo-list {
+        display: none;
+        width: 60vw;
+        border: 0.1em solid #C4C4C4;
+        border-bottom: none;
+        border-radius: 0.8vw 0.8vw 0 0;
+        max-height: 31vw;
+        overflow: auto;
+    }
+
+    .todo-list::-webkit-scrollbar {
+        width: 0.5vw;
+
+    }
+
+    .todo-list::-webkit-scrollbar-track {
+        border-radius: 10px;
+        background: rgba(0, 0, 0, 0.1);
+    }
+
+    .todo-list::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background: rgba(0, 0, 0, 0.2);
+    }
+
+    .todo-item {
+        overflow: auto;
+        display: flex;
+        justify-content: space-between;
+        padding: 1vw 0;
+        margin: 0.5vw 1vw;
+        cursor: move;
+    }
+
+
+    .remove-btn,
+    .x-btn {
+        background-color: #FFFFFF;
+        border: none;
+        outline: none;
+        padding: 0 0.5vw;
+        background-size: cover;
+        background-image: url("/images/gray-circle-x.svg");
+        background-repeat: no-repeat;
+        width: 3.5vw;
+        height: 3.5vw;
+    }
+
+    .remove-btn:hover,
+    .x-btn:hover {
+        background-image: url("/images/puple-circle-x.svg");
+        background-repeat: no-repeat;
+        cursor: pointer;
+    }
+
+    .input-content {
+        width: 60vw;
+        height: 10vw;
+        border: 0.1em solid #C4C4C4;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1.2vw;
+        margin-bottom: 4.5vw;
+        border-radius: 0.5vw;
+    }
+
+    .input-content .todo-input {
+        width: 50vw;
+        height: 8vw;
+        padding: 0.2vw;
+        border: none;
+        outline: none;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: center;
+    }
+
+    .add-btn {
+        width: 24vw;
+        height: 7.5vw;
+        border-radius: 6vw;
+        background-color: #833AE0;
+        display: flex;
+        align-items: center;
+        border: none;
+        outline: none;
+        margin-bottom: 1vw;
+        transition: 0.3s;
+        color: #FFFFFF;
+    }
+
+    .add-btn:hover {
+        background-color: #270454;
+        cursor: pointer;
+    }
+
+    .add-btn span {
+        padding-left: 1.5vw;
+    }
+
+    .add-btn .plus-btn {
+        width: 7.5vw;
+        height: 7.5vw;
+        border-radius: 50%;
+        background-color: #9953F1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+}
